@@ -1,5 +1,4 @@
-import Footer from '../components/Footer'
-import Navbar from '../components/navbar'
+import Footer from '../components/common/Footer'
 import { members } from '../lib/constants/team_members'
 import TeamMemberCard from '../components/TeamMemberCard'
 import { Card } from '../components/CommonCard'
@@ -8,7 +7,6 @@ import AbountUsHero from '../components/HeroSection/AboutUs'
 function AboutPage() {
   return (
     <>
-        <Navbar />
         <section className="p-6 text-center">
             <h2 className="text-3xl font-bold text-center mb-8 text-red-500">\ Team \</h2>
             <h3 className="text-2xl font-bold text-center mb-8">Our Leaders</h3>

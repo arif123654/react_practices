@@ -3,11 +3,10 @@ import { expertises } from "../lib/constants/expertises";
 import ServicesCard from "../components/ServicesCard";
 import { processes } from "../lib/constants/processes";
 import ProcessCard from "../components/ProcessCard";
-import Footer from "../components/Footer";
+import Footer from "../components/common/Footer";
 import TeamMemberCard from "../components/TeamMemberCard";
 import { members } from "../lib/constants/team_members";
 import TestimonialSlider from "../components/TestimonialSlider";
-import Navbar from "../components/navbar";
 import { Card } from "../components/CommonCard";
 
 type SectionHeaderProps = {
@@ -23,10 +22,7 @@ const SectionHeader: FC<SectionHeaderProps> = ({ title }) => (
 const HomePage: FC = () => {
   return (
     <div className="bg-[#fee] text-[#333]">
-      {/* Header Section */}
-      <header>
-        <Navbar />        
-      </header>
+      
       
       {/* Hero Section */}
       <section className="text-center py-16">
