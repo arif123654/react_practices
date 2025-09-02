@@ -7,6 +7,19 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# image files of the public/images folder
+public/images/*.png
+public/images/*.jpg
+public/images/*.jpeg
+public/images/*.gif
+public/images/*.svg
+public/images/*.webp
+public/images/*.ico
+
+
+#products.js file
+products.js
+
 node_modules
 dist
 dist-ssr
@@ -14,6 +27,7 @@ dist-ssr
 
 .env
 .env.*.local
+
 
 
 # Editor directories and files
