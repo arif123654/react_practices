@@ -1,8 +1,8 @@
-import { Nav, Navbar, Container} from 'react-bootstrap';
+import { Nav, Navbar, Container, Image} from 'react-bootstrap';
 import { FaShoppingCart, FaUser } from 'react-icons/fa';
 import { LinkContainer } from 'react-router-bootstrap';
 
-import vite from '../assets/react.svg';
+import logo from '../assets/logo.png';
 
 const Header = () => {
 return (
@@ -11,10 +11,7 @@ return (
             <Container>
                 <LinkContainer to="/">
                     <Navbar.Brand>
-                        <img
-                            alt="Vite logo"
-                            src={vite}
-                        />
+                        <Image src={logo} alt="ProShop Logo" style={{ width: '40px', height: '40px', marginRight: '10px' }} />
                         ProShop
                     </Navbar.Brand>
                 </LinkContainer>

@@ -8,6 +8,8 @@ import router from "./router"
 // Bootstrap CSS
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './assets/styles/index.css'
+import './assets/styles/bootstrap.custom.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
