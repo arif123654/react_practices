@@ -8,8 +8,10 @@ import Message from "../components/Message";
 
 const HomePage = () => {
 
-  const { data: products, isLoading, error} = useGetProductsQuery();
+  const { data, isLoading, error} = useGetProductsQuery();
   
+   // If your API returns { products: [...] }, use data.products
+  const products = Array.isArray(data) ? data : data?.products || [];
 
   return (
     <>
